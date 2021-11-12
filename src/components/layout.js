@@ -23,10 +23,10 @@ const Layout = (props) => {
                         line-height: 1.5;
                     }
                     h1, h2{
-                        font-family: 'Roboto', serif;
+                        font-family: 'Courier New', Courier, monospace;
                     }
                     h3{
-                        font-family: 'PT Sans', sans-serif;
+                        font-family: 'Courier New', Courier, monospace;
                     }
                     ul{
                         list-style: none;
