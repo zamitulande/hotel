@@ -3,5 +3,8 @@ module.exports = {
     siteUrl: "https://www.yourdomain.tld",
     title: "hotel",
   },
-  plugins: [],
+  plugins: [
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-emotion`
+  ],
 };
