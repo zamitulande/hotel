@@ -23,10 +23,10 @@ const Layout = (props) => {
                         line-height: 1.5;
                     }
                     h1, h2{
-                        font-family: 'Courier New', Courier, monospace;
+                        font-family: 'Roboto', sans-serif;
                     }
                     h3{
-                        font-family: 'Courier New', Courier, monospace;
+                        font-family: 'PT Sans', sans-serif;
                     }
                     ul{
                         list-style: none;
@@ -40,7 +40,7 @@ const Layout = (props) => {
              />
             <Helmet>
                 <title>Gatsby Hotel</title>
-                <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+                <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"/>
                 
 
                  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&
