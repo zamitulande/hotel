@@ -30,9 +30,8 @@ const TextoImangen= styled.div`
             @media(min-width:992px){
                 font-size:2.6rem;
         }
-`
-
-
+    }
+`;
 const ImagenHotel = () => {
 
     const {image} =useStaticQuery(graphql`
