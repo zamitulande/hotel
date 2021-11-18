@@ -16,6 +16,12 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-image`,
-    `gatsby-image`
+    `gatsby-image`,
+    {
+      resolve:'gatsby-source-datocms',
+      options:{
+        apiToken:'facb1e5b3c28882b76a70749d0caae'
+      }
+    }
   ],
 };
