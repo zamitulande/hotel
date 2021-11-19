@@ -1,12 +1,24 @@
 import React from 'react';
 import Layout from '../components/layout';
+import styled from '@emotion/styled';
 import ImagenHotel from '../components/imagenH';
 import ContenidoInicio from '../components/contenidoInicio';
 import useHabitaciones from '../hooks/use-habitaciones';
 import {css} from '@emotion/react';
 import HabitacionPreview from '../components/habitacionPreview';
 
+const ListadoHabitaciones = styled.ul`
+      max-width: 1200px;
+      width: 95%;
+      margin: 4rem auto 0 auto;
 
+      @media (min-width:768px){
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 3rem;
+        
+      }
+`
 
 const IndexPage = () => {
 
@@ -31,13 +43,16 @@ const IndexPage = () => {
         >Nuestras Habitaciones
         </h2>
 
-        <ul>
+        <ListadoHabitaciones>
           {habitaciones.map(habitacion=>(
-            <HabitacionPreview/>
+            <HabitacionPreview
+                key={habitacion.id}
+                habitacion={habitacion}
+            />
           )
           
            )}
-        </ul>
+        </ListadoHabitaciones>
 
     </Layout>
    
