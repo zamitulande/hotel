@@ -16,18 +16,18 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     if(resultado.errors) {
         reporter.panic('No hubo resultados ', resultado.errors);
     }
-    }
+    
 //     // Si hay paginas, crear los archivos
-     const habitaciones = resultado.data.allDatoCmsHabitacion.nodes;
+     const habitaciones = resultado.data.allDatoCmsHabitacione.nodes;
 
-//     habitaciones.forEach(habitacion => {
-//         actions.createPage({
-//             path: habitacion.slug,
-//             component: require.resolve('./src/components/habitaciones.js'),
-//             context: {
-//                 slug: habitacion.slug
-//             }
-//         })
-//     })
-
+    habitaciones.forEach(habitacion => {
+        actions.createPage({
+            path: habitacion.slug,
+            component: require.resolve('./src/components/habitaciones.js'),
+            context: {
+                slug: habitacion.slug
+            }
+        })
+    })
+}
     
